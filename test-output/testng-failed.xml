@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [MobileAutomationTesting]" parallel="tests">
+  <parameter name="platformVersion_" value="5.1"/>
+  <parameter name="URL_" value="127.0.0.1:4723/wd/hub"/>
+  <parameter name="UDID_" value="HGEJP0WB"/>
+  <parameter name="platformName_" value="Android"/>
+  <parameter name="deviceName_" value="Lenovo A2010"/>
+  <test name="Lenovo A2010(failed)" parallel="tests">
+    <parameter name="platformVersion_" value="5.1"/>
+    <parameter name="URL_" value="127.0.0.1:4723/wd/hub"/>
+    <parameter name="UDID_" value="HGEJP0WB"/>
+    <parameter name="platformName_" value="Android"/>
+    <parameter name="deviceName_" value="Lenovo A2010"/>
+    <classes>
+      <class name="testcases.DemoTest">
+        <methods>
+          <include name="DemoTestCase"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.DemoTest -->
+    </classes>
+  </test> <!-- Lenovo A2010(failed) -->
+</suite> <!-- Failed suite [MobileAutomationTesting] -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MobileAutomationTesting" parallel="tests"
+	thread-count="1">
+<!-- 	<test name="Nexus 5">
+		<parameter name="deviceName_" value="Nexus 5" />
+		<parameter name="UDID_" value="03a8fc0d094de16f" />
+		<parameter name="URL_" value="127.0.0.1:4723/wd/hub" />
+		<classes>
+			<class name="test.testcases.DemoTest">
+				<methods>
+				    <include name="Scenario_01_CheckFirstViewApp" />
+					<include name="Scenario_03_SearchViewAndRegisterRoute" />
+					<include name="checkPhoneButtonStatusWhenHasPhoneInfo" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	<test name="Lenovo A2010">
+		<parameter name="deviceName_" value="Lenovo A2010" />
+		<parameter name="UDID_" value="HGEJP0WB" />
+		<parameter name="platformName_" value="Android" />
+		<parameter name="platformVersion_" value="5.1" />
+		<parameter name="URL_" value="127.0.0.1:4723/wd/hub" />
+		<classes>
+			<class name="testcases.DemoTest">
+				<methods>
+					<include name="testcases.DemoTest.DemoTestCase" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
