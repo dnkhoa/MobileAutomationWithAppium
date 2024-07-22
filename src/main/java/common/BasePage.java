@@ -33,8 +33,10 @@ public class BasePage {
 		this.driver = driver;
 	//	this.touchAction = new TouchAction(driver);
 	//	mIsAndroid = BaseTest.mIsAndroid;
-		mXPathResource = new XPathResource();
-		mXPathResource.loadResource(BaseTest.platformVersion);
+		if(mXPathResource == null){
+			mXPathResource = new XPathResource();
+			mXPathResource.loadResource(BaseTest.platformVersion);
+		}
 	}
 
 	private MobileElement getMobileElement(String elementID) {
